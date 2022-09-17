@@ -2,14 +2,21 @@
     --cel-background-color: #F5F5F5;
     --cel-c-blue: #18233F;
     --cel-seaFoam: #74BFB8;
-    --cel-c-orange:#DF7A43C;
+    --cel-seaFoam-light:#d8f0f0;
+    --cel-c-orange: #DF7A43;
     --cel-platform-font: "roboto", Helvitica, sans-serif;
     --cel-font-base: 1rem;
     --cel-body-color: #F5F5F5;
     --cel-text-base: #272829;
     --cel-primary-header-bgcolor: #064AB9;
     --cel-white-color: #ffffff;
-    --cel-login-bg:#052D69;
+    --cel-login-bg:#19243e;
+    --cel-e-color-cyan:#5699a6;
+    --cel-e-color-cyan-light: #60aba7;
+    --cel-e-color-orange: #de6c40;
+    --cel-e-color-orange-light: #e8a458;
+    --cel-e-color-cyangreen:#89c998;
+
 
     /* Border-radius */
 
