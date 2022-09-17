@@ -1,6 +1,6 @@
 export const UrlConstants = {
     ADMIN: {
-        CREATE_QUIZ: 'createquiz',
+        CREATE_QUIZ: 'quiz',
         GET_QUIZ_CATEGORY:'masters/quizcategory',
     },
     USER: {

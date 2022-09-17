@@ -12,7 +12,7 @@ function createQuiz(quiz) {
     const requestOptions = {
         method: 'POST',
         headers:  authHeader(),
-        body: JSON.stringify({ quiz }),
+        body: JSON.stringify(quiz),
     };
 
     return fetch(`${config.apiUrl}${UrlConstants.ADMIN.CREATE_QUIZ}`, requestOptions)

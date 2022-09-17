@@ -20,7 +20,7 @@ function RegisterPage() {
     // reset login status
     useEffect(() => {
         dispatch(userActions.logout());
-        alert(quizCategory.toString());
+       /// alert(quizCategory.toString());
     });
 
     function handleChange(e) {

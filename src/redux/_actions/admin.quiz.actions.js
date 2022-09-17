@@ -5,11 +5,11 @@ export const adminQuizActions = {
     createQuiz
 };
 function createQuiz(quiz) {
-    
+    debugger;
     return dispatch => {
         dispatch(request({ quiz }));
 
-        adminQuizService.login(quiz)
+        adminQuizService.createQuiz(quiz)
             .then(
                 quiz => { 
                     dispatch(success(quiz));
