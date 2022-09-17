@@ -14,7 +14,6 @@ function LoginPage() {
     const { username, password } = inputs;
     const loggingIn = useSelector(state => state.authentication.loggingIn);
     const alert = useSelector(state => state.alert);
-    const test = useSelector(state => state.test);
     const dispatch = useDispatch();
     const location = useLocation();
     const CustomDialog=React.lazy(()=>import('../customDialog/customDialog'));
@@ -23,8 +22,6 @@ function LoginPage() {
     };
     // reset login status
     useEffect(() => { 
-        dispatch({ message:'test', type: 2 })
-        console.log(test);
         if(localStorage.getItem('user')){
             dispatch(userActions.logout()); 
             window.location.href='';
