@@ -1,7 +1,9 @@
 import React, { useState, useEffect,Suspense } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
+
 import { userActions } from '../redux/_actions/user.actions';
+import { adminQuizCategoryActions } from '../redux/_actions/quiz.category.actions'
 import {Row,Button,Col} from 'react-bootstrap';
 import {browserHistory} from "react-router";
 function LoginPage() {
@@ -14,6 +16,7 @@ function LoginPage() {
     const { username, password } = inputs;
     const loggingIn = useSelector(state => state.authentication.loggingIn);
     const alert = useSelector(state => state.alert);
+    const quizCategory = useSelector(state => state.quizCategory);
     const dispatch = useDispatch();
     const location = useLocation();
     const CustomDialog=React.lazy(()=>import('../customDialog/customDialog'));
@@ -22,6 +25,7 @@ function LoginPage() {
     };
     // reset login status
     useEffect(() => { 
+        dispatch(adminQuizCategoryActions.getQuizCategory());
         if(localStorage.getItem('user')){
             dispatch(userActions.logout()); 
             window.location.href='';

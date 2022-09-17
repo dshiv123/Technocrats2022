@@ -13,11 +13,14 @@ function RegisterPage() {
     });
     const [submitted, setSubmitted] = useState(false);
     const registering = useSelector(state => state.registration.registering);
+    const quizCategory = useSelector(state => state.quizCategory);
+    
     const dispatch = useDispatch();
 
     // reset login status
     useEffect(() => {
         dispatch(userActions.logout());
+        alert(quizCategory.toString());
     });
 
     function handleChange(e) {
