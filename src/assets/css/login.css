@@ -1,0 +1,62 @@
+@import "./_variable.css";
+.MuiAppBar-colorPrimary {
+    background-color: var(--cel-seaFoam) !important;
+}
+.login-bg{
+    background-color: var(--cel-login-bg);
+}
+.login-bg {
+    background-color: var(--cel-login-bg);
+    min-height: calc(100vh - (76px));
+}
+
+.login-popup {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.login-container {
+    font-size: var(--cel-font-heading-medium-3);
+    width: var(--cel-popup-width-small);
+    margin: var(--cel-space-800) auto var(--cel-space-300) auto !important;
+    background-color: var(--cel-card-color-background, var(--cel-color-container-primary-enabled));
+    border-radius: var(--cel-card-border-radius, var(--cel-border-radius-200));
+    box-shadow: var(--cel-card-shadow, var(--cel-shadow-100));
+    word-break: break-word;
+    width: var(--cel-popup-width-small);
+    align-items: center;
+    text-align: left;
+}
+.cel-pt-20 {
+    padding-top: var(--cel-space-500);
+}
+
+.cel-pb-20 {
+    padding-bottom: var(--cel-space-500);
+}
+.btn-cont{
+        text-align: center;
+        margin: 0 auto;
+        display: table;
+}
+
+.popup-header {
+    padding: var(--cel-space-300) var(--cel-space-600);
+    font-size: var(--cel-font-heading-bold-3);
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+}
+
+.popup-body {
+    padding: var(--cel-space-300);
+    width:90%;
+}
+.frm-control {
+    width: 100%;
+    height: var(--cel-size-800);
+    border-radius: var(--cel-border-radius-100);
+    /* padding: 0px var(--cel-space-400);*/
+    margin: var(--cel-space-400) 0px var(--cel-space-800);
+}

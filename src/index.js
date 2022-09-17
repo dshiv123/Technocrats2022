@@ -33,6 +33,12 @@ const ManageQuestion = React.lazy(() =>
 const StartQuiz = React.lazy(() =>
   import("./components/dashboard/quiz/startquiz")
 );
+const JoinQuiz = React.lazy(() =>
+  import("./components/dashboard/quiz/joinquiz")
+);
+const QuestionPreview = React.lazy(() =>
+  import("./components/dashboard/quiz/questionpreview")
+);
 
 export default function Index() {
   const alert = useSelector((state) => state.alert);
@@ -100,6 +106,26 @@ export default function Index() {
                     allowedrole={[RoleConstants.USER, RoleConstants.ADMIN]}
                   >
                     <StartQuiz />{" "}
+                  </PrivateRoute>
+                }
+              />
+              <Route
+                path="joinquiz"
+                element={
+                  <PrivateRoute
+                    allowedrole={[RoleConstants.USER, RoleConstants.ADMIN]}
+                  >
+                    <JoinQuiz />{" "}
+                  </PrivateRoute>
+                }
+              />
+              <Route
+                path="questionpreview"
+                element={
+                  <PrivateRoute
+                    allowedrole={[RoleConstants.USER, RoleConstants.ADMIN]}
+                  >
+                    <QuestionPreview />{" "}
                   </PrivateRoute>
                 }
               />

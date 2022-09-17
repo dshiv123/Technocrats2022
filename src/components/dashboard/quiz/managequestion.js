@@ -407,10 +407,13 @@ const ManageQuestion = () => {
               </div>
             </div>
             <div className="col-sm-12 col-md-12 col-lg-12">
+              <div className="circle-dev">
+                <AddIcon large />
+              </div>
               <div className="mx-auto cel-pt-20">
                 <Stack spacing={2} direction="row">
                   <Button variant="outlined">Cancel</Button>
-                  <Button variant="contained">Save</Button>
+                  <Button variant="contained">Submit</Button>
                 </Stack>
               </div>
             </div>
