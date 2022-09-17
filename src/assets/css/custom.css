@@ -730,6 +730,36 @@ body {
 .cel-card-body{
 padding: var(--cel-space-400);
 }
+.div-right{
+        margin-top: -4px;
+        float: right;
+}
+.content-editable{
+    padding: var(--cel-space-400);
+    border-radius: var(--cel-border-radius-100);
+    box-shadow: var(--cel-card-shadow);
+}
+.label-border{
+    border-top:1px solid var(--cel-color-gray-500);
+}
+.action-button{
+    text-align: right;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: -15px;
+        margin-right: -15px;
+        width: 100%;
+}
+.MuiFormGroup-root{
+    margin-left: -12px;
+    padding-top: -5px;
+    text-align: left;
+}
+.delete-icon, check-radio {padding-top: var(--cel-space-100);
+color: var(--cel-c-blue);}
+.action-link{
+    background-color: #d8f0f0;
+}
 
 .header {
     background-color: var(--cel-white-color);
