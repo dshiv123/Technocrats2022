@@ -866,41 +866,6 @@ font-size: 36px;
     padding-right: var(--cel-space-500);
     padding-top: var(--cel-space-300);
 }
-.login-bg{
-    background-color: var(--cel-login-bg);
-    min-height: calc(100vh - (76px));
-}
-.login-popup {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
-.login-container {
-    font-size: var(--cel-font-heading-medium-3);
-    width: var(--cel-popup-width-small);
-    margin: var(--cel-space-800) auto var(--cel-space-300) auto !important;
-    background-color: var(--cel-card-color-background, var(--cel-color-container-primary-enabled));
-    border-radius: var(--cel-card-border-radius, var(--cel-border-radius-200));
-    box-shadow: var(--cel-card-shadow, var(--cel-shadow-100));
-    word-break: break-word;
-    width: var(--cel-popup-width-small);
-    /* display: flex; */
-    align-items: center;
-    text-align: left;
-    padding-left: var(--cel-space-800);
-
-}
-.popup-header{
-    padding: var(--cel-space-300);
-    font-size: var(--cel-font-heading-bold-3);
-    text-transform: uppercase;
-    font-weight:bold;
-    width: 100%;
-}
-.popup-body{
-padding: var(--cel-space-300);
-}
 
 .btn button {
     padding: var(--cel-space-200) var(--cel-space-400) !important;
