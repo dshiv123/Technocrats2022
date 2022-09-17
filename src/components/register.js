@@ -13,12 +13,10 @@ function RegisterPage() {
     });
     const [submitted, setSubmitted] = useState(false);
     const registering = useSelector(state => state.registration.registering);
-    const test = useSelector(state => state.test);
     const dispatch = useDispatch();
 
     // reset login status
     useEffect(() => {
-        console.log(test);
         dispatch(userActions.logout());
     });
 

@@ -1,0 +1,637 @@
+:root {
+    --cel-background-color: #F5F5F5;
+    --cel-c-blue: #18233F;
+    --cel-seaFoam: #74BFB8;
+    --cel-c-orange:#DF7A43C;
+    --cel-platform-font: "roboto", Helvitica, sans-serif;
+    --cel-font-base: 1rem;
+    --cel-body-color: #F5F5F5;
+    --cel-text-base: #272829;
+    --cel-primary-header-bgcolor: #064AB9;
+    --cel-white-color: #ffffff;
+    --cel-login-bg:#052D69;
+
+    /* Border-radius */
+
+    --cel-border-radius-0: 0;
+    --cel-border-radius-50: 2px;
+    --cel-border-radius-100: 4px;
+    --cel-border-radius-200: 8px;
+    --cel-border-radius-300: 12px;
+    --cel-border-radius-400: 16px;
+    --cel-border-radius-500: 20px;
+    --cel-border-radius-circle: 50%;
+
+    /* Shadow */
+        --cel-shadow-50: 0 2px 3px 0 rgba(39, 40, 41, 0.2), 0 1px 1px 0 rgba(39, 40, 41, 0.1);
+    --cel-shadow-100: 0 4px 6px 0 rgba(39, 40, 41, 0.2), 0 2px 2px 0 rgba(39, 40, 41, 0.1);
+    --cel-shadow-200: 0 8px 12px 0 rgba(39, 40, 41, 0.2), 0 4px 4px 0 rgba(39, 40, 41, 0.1);
+    --cel-shadow-300: 0 12px 18px 0 rgba(39, 40, 41, 0.2), 0 6px 6px 0 rgba(39, 40, 41, 0.1);
+    --cel-shadow-400: 0 16px 24px 0 rgba(39, 40, 41, 0.2), 0 8px 8px 0 rgba(39, 40, 41, 0.1);
+
+    /* Font family */
+
+    --cel-font-family-roboto: 'Monserrat',Halcom, sans-serif;
+
+    /* Font-weight */
+    --cel-font-weight-300: 300;
+    --cel-font-weight-400: 400;
+    --cel-font-weight-500: 500;
+    --cel-font-weight-700: 700;
+
+    /* Font-Size */
+    --cel-font-size-250: 10px;
+    --cel-font-size-300: 12px;
+    --cel-font-size-350: 14px;
+    --cel-font-size-400: 16px;
+    --cel-font-size-450: 18px;
+    --cel-font-size-500: 20px;
+    --cel-font-size-600: 24px;
+    --cel-font-size-700: 28px;
+    --cel-font-size-800: 32px;
+    --cel-font-size-900: 36px;
+    --cel-font-size-1050: 42px;
+    --cel-font-size-1200: 48px;
+    --cel-font-size-1350: 54px;
+    --cel-font-size-1500: 60px;
+    --cel-font-size-1700: 68px;
+    --cel-font-size-1900: 76px;
+    --cel-font-size-2100: 84px;
+    --cel-font-size-2300: 92px;
+
+    /* Line Height */
+    --cel-font-line-height-300: 12px;
+    --cel-font-line-height-400: 16px;
+    --cel-font-line-height-500: 20px;
+    --cel-font-line-height-600: 24px;
+    --cel-font-line-height-700: 28px;
+    --cel-font-line-height-800: 32px;
+    --cel-font-line-height-900: 36px;
+    --cel-font-line-height-1000: 40px;
+    --cel-font-line-height-1100: 44px;
+    --cel-font-line-height-1300: 52px;
+    --cel-font-line-height-1500: 60px;
+    --cel-font-line-height-1600: 64px;
+    --cel-font-line-height-1800: 72px;
+    --cel-font-line-height-2000: 80px;
+    --cel-font-line-height-2300: 92px;
+    --cel-font-line-height-2500: 100px;
+    --cel-font-line-height-2700: 108px;
+
+    /* Decision */
+    /* Micro (small snippets of text with limited space within a component) */
+    --cel-font-micro-regular: 400 10px/12px 'Roboto', 'Helvetica Neue', sans-serif;
+    --cel-font-micro-medium: 500 10px/12px 'Roboto', 'Helvetica Neue', sans-serif;
+    --cel-font-micro-bold: 700 10px/12px 'Roboto', 'Helvetica Neue', sans-serif;
+
+    /* Helper (Used for secondary or explanatory text as well as field labels) */
+    --cel-font-helper-regular: 400 12px/16px 'Roboto', 'Helvetica Neue', sans-serif;
+    --cel-font-helper-medium: 500 12px/16px 'Roboto', 'Helvetica Neue', sans-serif;
+    --cel-font-helper-bold: 700 12px/16px 'Roboto', 'Helvetica Neue', sans-serif;
+
+    /* Body (Used for blocks of text and most content displayed within components) */
+    --cel-font-body-regular-1: 400 14px/20px 'Roboto', 'Helvetica Neue', sans-serif;
+    --cel-font-body-regular-2: 400 16px/24px 'Roboto', 'Helvetica Neue', sans-serif;
+    --cel-font-body-medium-1: 500 14px/20px 'Roboto', 'Helvetica Neue', sans-serif;
+    --cel-font-body-medium-2: 500 16px/24px 'Roboto', 'Helvetica Neue', sans-serif;
+    --cel-font-body-bold-1: 700 14px/20px 'Roboto', 'Helvetica Neue', sans-serif;
+    --cel-font-body-bold-2: 700 16px/24px 'Roboto', 'Helvetica Neue', sans-serif;
+
+    /* Display (Used to create visual emphasis through size without being misconstrued as a heading) */
+    --cel-font-display-light-1: 300 42px/52px 'Roboto', 'Helvetica Neue', sans-serif;
+    --cel-font-display-light-2: 300 54px/64px 'Roboto', 'Helvetica Neue', sans-serif;
+    --cel-font-display-light-3: 300 92px/108px 'Roboto', 'Helvetica Neue', sans-serif;
+
+    /* Heading (Used to create visual hierarchy on a page and within a component) */
+    --cel-font-heading-regular-1: 400 14px/20px 'Roboto', 'Helvetica Neue', sans-serif;
+    --cel-font-heading-regular-2: 400 16px/24px 'Roboto', 'Helvetica Neue', sans-serif;
+    --cel-font-heading-regular-3: 400 20px/28px 'Roboto', 'Helvetica Neue', sans-serif;
+    --cel-font-heading-regular-4: 400 28px/36px 'Roboto', 'Helvetica Neue', sans-serif;
+    --cel-font-heading-regular-5: 400 32px/40px 'Roboto', 'Helvetica Neue', sans-serif;
+    --cel-font-heading-regular-6: 400 36px/44px 'Roboto', 'Helvetica Neue', sans-serif;
+
+    --cel-font-heading-medium-1: 500 14px/20px 'Roboto', 'Helvetica Neue', sans-serif;
+    --cel-font-heading-medium-2: 500 16px/24px 'Roboto', 'Helvetica Neue', sans-serif;
+    --cel-font-heading-medium-3: 500 20px/28px 'Roboto', 'Helvetica Neue', sans-serif;
+    --cel-font-heading-medium-4: 500 28px/36px 'Roboto', 'Helvetica Neue', sans-serif;
+    --cel-font-heading-medium-5: 500 32px/40px 'Roboto', 'Helvetica Neue', sans-serif;
+    --cel-font-heading-medium-6: 500 36px/44px 'Roboto', 'Helvetica Neue', sans-serif;
+
+    --cel-font-heading-bold-1: 700 14px/20px 'Roboto', 'Helvetica Neue', sans-serif;
+    --cel-font-heading-bold-2: 700 16px/24px 'Roboto', 'Helvetica Neue', sans-serif;
+    --cel-font-heading-bold-3: 700 20px/28px 'Roboto', 'Helvetica Neue', sans-serif;
+    --cel-font-heading-bold-4: 700 28px/36px 'Roboto', 'Helvetica Neue', sans-serif;
+    --cel-font-heading-bold-5: 700 32px/40px 'Roboto', 'Helvetica Neue', sans-serif;
+    --cel-font-heading-bold-6: 700 36px/44px 'Roboto', 'Helvetica Neue', sans-serif;
+
+    /* Opacity (transparent) */
+    --cel-opacity-0: 0;
+    --cel-opacity-100: 0.1;
+    --cel-opacity-200: 0.2;
+    --cel-opacity-300: 0.3;
+    --cel-opacity-400: 0.4;
+    --cel-opacity-500: 0.5;
+    --cel-opacity-600: 0.6;
+    --cel-opacity-700: 0.7;
+    --cel-opacity-800: 0.8;
+    --cel-opacity-900: 0.9;
+    /* Decision  (Used on disabled elements)*/
+    --cel-opacity-disabled: 0.3;
+
+    /* Z-index */
+    --cel-z-index-negative-100: -100;
+    --cel-z-index-0: 0;
+    --cel-z-index-positive-100: 100;
+    --cel-z-index-positive-200: 300;
+    --cel-z-index-positive-300: 300;
+    --cel-z-index-positive-400: 100;
+    --cel-z-index-positive-500: 500;
+    --cel-z-index-positive-600: 600;
+    --cel-z-index-positive-700: 700;
+    --cel-z-index-positive-800: 800;
+    --cel-z-index-positive-900: 900;
+    --cel-z-index-positive-1000: 1000;
+
+    /* Size  */
+    --cel-size-50: 2px;
+    --cel-size-100: 4px;
+    --cel-size-200: 8px;
+    --cel-size-300: 12px;
+    --cel-size-400: 16px;
+    --cel-size-500: 20px;
+    --cel-size-600: 24px;
+    --cel-size-700: 28px;
+    --cel-size-800: 32px;
+    --cel-size-900: 36px;
+    --cel-size-1000: 40px;
+    --cel-size-1100: 44px;
+    --cel-size-1200: 48px;
+    --cel-size-1300: 52px;
+    --cel-size-1400: 56px;
+    --cel-size-1500: 60px;
+    --cel-size-1600: 64px;
+    --cel-size-1700: 68px;
+    --cel-size-1800: 72px;
+    --cel-size-1900: 76px;
+    --cel-size-2000: 80px;
+    --cel-size-2100: 84px;
+    --cel-size-2200: 88px;
+    --cel-size-2300: 92px;
+    --cel-size-2400: 96px;
+
+    /* Space */
+    --cel-space-negative-12: -12px;
+    --cel-space-negative-24: -24px;
+    --cel-space-negative-28: -28px;
+    --cel-space-negative-30: -30px;
+    --cel-space-negative-50: -50px;
+    --cel-space-50: 2px;
+    --cel-space-100: 4px;
+    --cel-space-200: 8px;
+    --cel-space-300: 12px;
+    --cel-space-400: 16px;
+    --cel-space-500: 20px;
+    --cel-space-600: 24px;
+    --cel-space-700: 28px;
+    --cel-space-800: 32px;
+    --cel-space-900: 36px;
+    --cel-space-1000: 40px;
+    --cel-space-1100: 44px;
+    --cel-space-1200: 48px;
+    --cel-space-1300: 52px;
+    --cel-space-1400: 56px;
+    --cel-space-1500: 60px;
+    --cel-space-1600: 64px;
+    --cel-space-1700: 68px;
+    --cel-space-1800: 72px;
+    --cel-space-1900: 76px;
+    --cel-space-2000: 80px;
+    --cel-space-2100: 84px;
+    --cel-space-2200: 88px;
+    --cel-space-2300: 92px;
+    --cel-space-2400: 96px;
+
+    /* Colors */
+    /* Gray */
+    --cel-color-gray-0: rgb(255, 255, 255);
+    --cel-color-gray-50: rgb(241, 244, 246);
+    --cel-color-gray-100: rgb(231, 236, 240);
+    --cel-color-gray-150: rgb(217, 223, 228);
+    --cel-color-gray-200: rgb(202, 208, 214);
+    --cel-color-gray-250: rgb(182, 187, 192);
+    --cel-color-gray-300: rgb(166, 170, 175);
+    --cel-color-gray-350: rgb(166, 170, 175);
+    --cel-color-gray-400: rgb(140, 144, 148);
+    --cel-color-gray-450: rgb(129, 133, 138);
+    --cel-color-gray-500: rgb(115, 118, 121);
+    --cel-color-gray-550: rgb(108, 111, 113);
+    --cel-color-gray-600: rgb(100, 103, 105);
+    --cel-color-gray-650: rgb(87, 90, 93);
+    --cel-color-gray-700: rgb(80, 83, 85);
+    --cel-color-gray-750: rgb(71, 74, 76);
+    --cel-color-gray-800: rgb(60, 62, 63);
+    --cel-color-gray-850: rgb(52, 53, 54);
+    --cel-color-gray-900: rgb(39, 40, 41);
+    --cel-color-gray-950: rgb(27, 28, 28);
+    --cel-color-gray-1000: rgb(0, 0, 0);
+
+    /* Red */
+    --cel-color-red-50: rgb(254, 241, 239);
+    --cel-color-red-100: rgb(251, 225, 221);
+    --cel-color-red-150: rgb(249, 211, 205);
+    --cel-color-red-200: rgb(248, 194, 187);
+    --cel-color-red-250: rgb(245, 171, 161);
+    --cel-color-red-300: rgb(242, 143, 130);
+    --cel-color-red-350: rgb(240, 124, 109);
+    --cel-color-red-400: rgb(237, 99, 82);
+    --cel-color-red-450: rgb(234, 77, 58);
+    --cel-color-red-500: rgb(229, 35, 10);
+    --cel-color-red-550: rgb(216, 33, 9);
+    --cel-color-red-600: rgb(201, 29, 7);
+    --cel-color-red-650: rgb(184, 27, 6);
+    --cel-color-red-700: rgb(164, 24, 6);
+    --cel-color-red-750: rgb(47, 21, 5);
+    --cel-color-red-800: rgb(124, 18, 4);
+    --cel-color-red-850: rgb(108, 16, 3);
+    --cel-color-red-900: rgb(83, 12, 3);
+    --cel-color-red-950: rgb(60, 9, 2);
+
+    /* Orange */
+    --cel-color-orange-50: rgb(252, 242, 227);
+    --cel-color-orange-100: rgb(249, 228, 195);
+    --cel-color-orange-150: rgb(246, 215, 166);
+    --cel-color-orange-200: rgb(242, 200, 134);
+    --cel-color-orange-250: rgb(237, 179, 88);
+    --cel-color-orange-300: rgb(231, 153, 29);
+    --cel-color-orange-350: rgb(216, 141, 23);
+    --cel-color-orange-400: rgb(201, 127, 7);
+    --cel-color-orange-450: rgb(185, 117, 6);
+    --cel-color-orange-500: rgb(165, 104, 6);
+    --cel-color-orange-550: rgb(155, 98, 6);
+    --cel-color-orange-600: rgb(144, 91, 5);
+    --cel-color-orange-650: rgb(131, 83, 5);
+    --cel-color-orange-700: rgb(116, 73, 4);
+    --cel-color-orange-750: rgb(104, 65, 4);
+    --cel-color-orange-800: rgb(87, 55, 3);
+    --cel-color-orange-850: rgb(74, 47, 3);
+    --cel-color-orange-900: rgb(57, 36, 2);
+    --cel-color-orange-950: rgb(39, 25, 1);
+
+    /* Yellow */
+    --cel-color-yellow-50: rgb(243, 248, 191);
+    --cel-color-yellow-100: rgb(232, 238, 110);
+    --cel-color-yellow-150: rgb(219, 229, 30);
+    --cel-color-yellow-200: rgb(207, 216, 0);
+    --cel-color-yellow-250: rgb(190, 198, 0);
+    --cel-color-yellow-300: rgb(174, 176, 0);
+    --cel-color-yellow-350: rgb(161, 163, 0);
+    --cel-color-yellow-400: rgb(150, 148, 0);
+    --cel-color-yellow-450: rgb(138, 136, 0);
+    --cel-color-yellow-500: rgb(125, 121, 0);
+    --cel-color-yellow-550: rgb(117, 114, 0);
+    --cel-color-yellow-600: rgb(111, 104, 0);
+    --cel-color-yellow-650: rgb(101, 95, 0);
+    --cel-color-yellow-700: rgb(91, 83, 0);
+    --cel-color-yellow-750: rgb(82, 74, 0);
+    --cel-color-yellow-800: rgb(70, 62, 0);
+    --cel-color-yellow-850: rgb(60, 53, 0);
+    --cel-color-yellow-900: rgb(46, 40, 0);
+    --cel-color-yellow-950: rgb(32, 28, 0);
+
+    /* Lime */
+    --cel-color-lime-50: rgb(228, 250, 213);
+    --cel-color-lime-100: rgb(197, 245, 161);
+    --cel-color-lime-150: rgb(165, 239, 108);
+    --cel-color-lime-200: rgb(129, 231, 33);
+    --cel-color-lime-250: rgb(115, 213, 23);
+    --cel-color-lime-300: rgb(95, 192, 0);
+    --cel-color-lime-350: rgb(88, 178, 0);
+    --cel-color-lime-400: rgb(83, 162, 0);
+    --cel-color-lime-450: rgb(76, 149, 0);
+    --cel-color-lime-500: rgb(70, 132, 0);
+    --cel-color-lime-550: rgb(66, 124, 0);
+    --cel-color-lime-600: rgb(63, 115, 0);
+    --cel-color-lime-650: rgb(58, 105, 0);
+    --cel-color-lime-700: rgb(53, 93, 0);
+    --cel-color-lime-750: rgb(47, 83, 0);
+    --cel-color-lime-800: rgb(41, 69, 0);
+    --cel-color-lime-850: rgb(35, 59, 0);
+    --cel-color-lime-900: rgb(28, 45, 0);
+    --cel-color-lime-950: rgb(19, 31, 0);
+
+    /* Green */
+    --cel-color-green-50: rgb(221, 251, 224);
+    --cel-color-green-100: rgb(179, 247, 187);
+    --cel-color-green-150: rgb(135, 242, 148);
+    --cel-color-green-200: rgb(74, 236, 93);
+    --cel-color-green-250: rgb(23, 219, 46);
+    --cel-color-green-300: rgb(7, 197, 29);
+    --cel-color-green-350: rgb(7, 183, 27);
+    --cel-color-green-400: rgb(6, 167, 25);
+    --cel-color-green-450: rgb(5, 154, 23);
+    --cel-color-green-500: rgb(5, 137, 20);
+    --cel-color-green-550: rgb(5, 129, 19);
+    --cel-color-green-600: rgb(4, 119, 18);
+    --cel-color-green-650: rgb(4, 109, 16);
+    --cel-color-green-700: rgb(3, 96, 14);
+    --cel-color-green-750: rgb(3, 86, 13);
+    --cel-color-green-800: rgb(3, 73, 11);
+    --cel-color-green-850: rgb(3, 62, 9);
+    --cel-color-green-900: rgb(2, 48, 7);
+    --cel-color-green-950: rgb(1, 33, 5);
+
+    /* Mint */
+    --cel-color-mint-50: rgb(217, 251, 238);
+    --cel-color-mint-100: rgb(170, 246, 217);
+    --cel-color-mint-150: rgb(122, 241, 196);
+    --cel-color-mint-200: rgb(53, 234, 164);
+    --cel-color-mint-250: rgb(22, 216, 141);
+    --cel-color-mint-300: rgb(7, 194, 122);
+    --cel-color-mint-350: rgb(7, 180, 113);
+    --cel-color-mint-400: rgb(6, 164, 103);
+    --cel-color-mint-450: rgb(6, 152, 95);
+    --cel-color-mint-500: rgb(5, 135, 85);
+    --cel-color-mint-550: rgb(5, 127, 80);
+    --cel-color-mint-600: rgb(4, 118, 74);
+    --cel-color-mint-650: rgb(4, 107, 67);
+    --cel-color-mint-700: rgb(3, 95, 60);
+    --cel-color-mint-750: rgb(3, 85, 53);
+    --cel-color-mint-800: rgb(2, 71, 45);
+    --cel-color-mint-850: rgb(2, 62, 39);
+    --cel-color-mint-900: rgb(2, 47, 29);
+    --cel-color-mint-950: rgb(1, 33, 20);
+
+
+    /* Cyan */
+    --cel-color-cyan-50: rgb(232, 247, 247);
+    --cel-color-cyan-100: rgb(197, 235, 247);
+    --cel-color-cyan-150: rgb(164, 228, 249);
+    --cel-color-cyan-200: rgb(118, 220, 253);
+    --cel-color-cyan-250: rgb(56, 204, 252);
+    --cel-color-cyan-300: rgb(4, 183, 241);
+    --cel-color-cyan-350: rgb(4, 169, 223);
+    --cel-color-cyan-400: rgb(3, 155, 204);
+    --cel-color-cyan-450: rgb(3, 143, 187);
+    --cel-color-cyan-500: rgb(2, 127, 167);
+    --cel-color-cyan-550: rgb(2, 119, 157);
+    --cel-color-cyan-600: rgb(2, 110, 145);
+    --cel-color-cyan-650: rgb(2, 101, 133);
+    --cel-color-cyan-700: rgb(2, 89, 118);
+    --cel-color-cyan-750: rgb(2, 79, 105);
+    --cel-color-cyan-800: rgb(1, 67, 89);
+    --cel-color-cyan-850: rgb(1, 58, 77);
+    --cel-color-cyan-900: rgb(1, 44, 58);
+    --cel-color-cyan-950: rgb(1, 31, 41);
+
+    /* Azure */
+    --cel-color-azure-50: rgb(238, 244, 253);
+    --cel-color-azure-100: rgb(219, 232, 251);
+    --cel-color-azure-150: rgb(201, 221, 249);
+    --cel-color-azure-200: rgb(184, 208, 248);
+    --cel-color-azure-250: rgb(158, 191, 246);
+    --cel-color-azure-300: rgb(128, 171, 242);
+    --cel-color-azure-350: rgb(108, 158, 240);
+    --cel-color-azure-400: rgb(85, 143, 237);
+    --cel-color-azure-450: rgb(65, 130, 235);
+    --cel-color-azure-500: rgb(39, 112, 232);
+    --cel-color-azure-550: rgb(26, 103, 231);
+    --cel-color-azure-600: rgb(8, 92, 229);
+    --cel-color-azure-650: rgb(7, 84, 209);
+    --cel-color-azure-700: rgb(6, 74, 185);
+    /*just above one header bg color*/
+    --cel-color-azure-750: rgb(5, 66, 166);
+    --cel-color-azure-800: rgb(5, 56, 140);
+    --cel-color-azure-850: rgb(4, 48, 121);
+    --cel-color-azure-900: rgb(6, 24, 95);
+    --cel-color-azure-950: rgb(5, 20, 81);
+
+
+    /* Blue */
+    --cel-color-blue-50: rgb(244, 242, 254);
+    --cel-color-blue-100: rgb(231, 228, 252);
+    --cel-color-blue-150: rgb(220, 216, 251);
+    --cel-color-blue-200: rgb(207, 202, 249);
+    --cel-color-blue-250: rgb(189, 182, 247);
+    --cel-color-blue-300: rgb(170, 160, 245);
+    --cel-color-blue-350: rgb(157, 145, 243);
+    --cel-color-blue-400: rgb(142, 128, 242);
+    --cel-color-blue-450: rgb(130, 114, 241);
+    --cel-color-blue-500: rgb(112, 95, 238);
+    --cel-color-blue-550: rgb(104, 86, 237);
+    --cel-color-blue-600: rgb(93, 74, 236);
+    --cel-color-blue-650: rgb(81, 61, 235);
+    --cel-color-blue-700: rgb(63, 41, 232);
+    --cel-color-blue-750: rgb(47, 24, 226);
+    --cel-color-blue-800: rgb(30, 7, 203);
+    --cel-color-blue-850: rgb(26, 6, 177);
+    --cel-color-blue-900: rgb(21, 5, 138);
+    --cel-color-blue-950: rgb(15, 4, 102);
+
+    /* Violet */
+    --cel-color-violet-50: rgb(248, 241, 254);
+    --cel-color-violet-100: rgb(241, 225, 252);
+    --cel-color-violet-150: rgb(234, 211, 251);
+    --cel-color-violet-200: rgb(228, 195, 249);
+    --cel-color-violet-250: rgb(218, 172, 247);
+    --cel-color-violet-300: rgb(206, 146, 243);
+    --cel-color-violet-350: rgb(198, 129, 241);
+    --cel-color-violet-400: rgb(189, 107, 239);
+    --cel-color-violet-450: rgb(181, 89, 237);
+    --cel-color-violet-500: rgb(169, 63, 235);
+    --cel-color-violet-550: rgb(162, 48, 233);
+    --cel-color-violet-600: rgb(153, 28, 231);
+    --cel-color-violet-650: rgb(140, 23, 214);
+    --cel-color-violet-700: rgb(124, 7, 197);
+    --cel-color-violet-750: rgb(111, 6, 177);
+    --cel-color-violet-800: rgb(95, 5, 151);
+    --cel-color-violet-850: rgb(82, 4, 131);
+    --cel-color-violet-900: rgb(64, 4, 101);
+    --cel-color-violet-950: rgb(47, 3, 74);
+
+    /* Magenta */
+    --cel-color-magenta-50: rgb(254, 239, 252);
+    --cel-color-magenta-100: rgb(252, 222, 248);
+    --cel-color-magenta-150: rgb(250, 205, 244);
+    --cel-color-magenta-200: rgb(248, 188, 241);
+    --cel-color-magenta-250: rgb(245, 161, 235);
+    --cel-color-magenta-300: rgb(242, 128, 229);
+    --cel-color-magenta-350: rgb(240, 105, 224);
+    --cel-color-magenta-400: rgb(236, 73, 217);
+    --cel-color-magenta-450: rgb(232, 37, 209);
+    --cel-color-magenta-500: rgb(212, 7, 189);
+    --cel-color-magenta-550: rgb(200, 7, 179);
+    --cel-color-magenta-600: rgb(186, 7, 166);
+    --cel-color-magenta-650: rgb(171, 6, 152);
+    --cel-color-magenta-700: rgb(152, 5, 135);
+    --cel-color-magenta-750: rgb(136, 5, 121);
+    --cel-color-magenta-800: rgb(116, 4, 103);
+    --cel-color-magenta-850: rgb(101, 3, 89);
+    --cel-color-magenta-900: rgb(78, 3, 69);
+    --cel-color-magenta-950: rgb(56, 2, 50);
+
+    /* Rose */
+    --cel-color-rose-50: rgb(254, 240, 245);
+    --cel-color-rose-100: rgb(252, 223, 234);
+    --cel-color-rose-150: rgb(251, 208, 224);
+    --cel-color-rose-200: rgb(248, 191, 213);
+    --cel-color-rose-250: rgb(245, 167, 197);
+    --cel-color-rose-300: rgb(243, 137, 178);
+    --cel-color-rose-350: rgb(241, 116, 164);
+    --cel-color-rose-400: rgb(238, 90, 147);
+    --cel-color-rose-450: rgb(235, 65, 131);
+    --cel-color-rose-500: rgb(230, 14, 97);
+    --cel-color-rose-550: rgb(216, 13, 91);
+    --cel-color-rose-600: rgb(202, 7, 82);
+    --cel-color-rose-650: rgb(185, 6, 75);
+    --cel-color-rose-700: rgb(165, 6, 67);
+    --cel-color-rose-750: rgb(148, 5, 60);
+    --cel-color-rose-800: rgb(126, 4, 51);
+    --cel-color-rose-850: rgb(09, 3, 44);
+    --cel-color-rose-900: rgb(85, 3, 34);
+    --cel-color-rose-950: rgb(62, 2, 25);
+
+
+    /* Decisions Container */
+    --cel-color-container-page: rgb(231, 236, 240);
+    --cel-color-container-primary-enabled: rgb(255, 255, 255);
+    --cel-color-container-primary-hover: rgb(241, 244, 246);
+    --cel-color-container-primary-active: rgb(231, 236, 240);
+    --cel-color-container-primary-selected: rgb(238, 244, 253);
+    --cel-color-container-secondary-enabled: rgb(241, 244, 246);
+    --cel-color-container-secondary-hover: rgb(255, 255, 255);
+    --cel-color-container-secondary-active: rgb(231, 236, 240);
+    --cel-color-container-secondary-selected: rgb(219, 232, 251);
+
+    /* Overlay */
+    --cel-color-overlay: rgba(39, 40, 41, 0.6);
+
+    /* Control (Used on the containers of interactive elements such as slider and switch tracks)*/
+    --cel-color-control-enabled: rgb(217, 223, 228);
+    --cel-color-control-hover: rgb(202, 208, 214);
+    --cel-color-control-active: rgb(182, 187, 192);
+
+    /* Brand  (Used to emphasize areas of importance such as feature areas or primary calls-to-action) */
+    --cel-color-brand-primary: rgb(6, 24, 95);
+    --cel-color-brand-secondary: rgb(8, 92, 229);
+    --cel-color-brand-tertiary: rgb(118, 220, 253);
+    --cel-color-brand-gradient-light: linear-gradient(135deg, rgb(232, 247, 247) 0%, rgb(118, 220, 253) 100%);
+    --cel-color-brand-gradient-medium: linear-gradient(135deg, rgb(118, 220, 253) 0%, rgb(8, 92, 229) 100%);
+    --cel-color-brand-gradient-dark: linear-gradient(135deg, rgb(8, 92, 229) 0%, rgb(6, 24, 95) 100%);
+    --cel-color-brand-on-primary: rgb(255, 255, 255);
+    --cel-color-brand-on-secondary: rgb(255, 255, 255);
+    --cel-color-brand-on-tertiary: rgb(6, 74, 185);
+    --cel-color-brand-on-gradient-light: rgb(6, 24, 95);
+    --cel-color-brand-on-gradient-dark: rgb(255, 255, 255);
+
+    /* Divider (Used on subtle border elements such as dividers and table borders) */
+    --cel-color-divider-primary: rgb(115, 118, 121);
+    --cel-color-divider-secondary: rgb(231, 236, 240);
+    --cel-color-divider-inverse: rgb(255, 255, 255);
+
+    /* Content (Used for content that needs to have a strong branded presence) */
+    --cel-color-content-brand-enabled: rgb(8, 92, 229);
+    --cel-color-content-brand-hover: rgb(7, 84, 209);
+    --cel-color-content-brand-active: rgb(6, 74, 185);
+    --cel-color-content-primary-enabled: rgb(39, 40, 41);
+    --cel-color-content-primary-hover: rgb(27, 28, 28);
+    --cel-color-content-primary-active: rgb(0, 0, 0);
+    --cel-color-content-secondary-enabled: rgb(100, 103, 105);
+    --cel-color-content-secondary-hover: rgb(87, 90, 93);
+    --cel-color-content-secondary-active: rgb(80, 83, 85);
+    --cel-color-content-positive-enabled: rgb(4, 119, 18);
+    --cel-color-content-positive-hover: rgb(4, 109, 16);
+    --cel-color-content-positive-active: rgb(3, 96, 14);
+    --cel-color-content-negative-enabled: rgb(201, 29, 7);
+    --cel-color-content-negative-hover: rgb(164, 24, 6);
+    --cel-color-content-inverse-enabled: rgb(255, 255, 255);
+    --cel-color-content-inverse-hover: rgb(241, 244, 246);
+    --cel-color-content-inverse-active: rgb(231, 236, 240);
+    --cel-color-content-on-brand-enabled: rgb(255, 255, 255);
+    --cel-color-content-on-brand-hover: rgb(255, 255, 255);
+    --cel-color-content-on-brand-active: rgb(255, 255, 255);
+    --cel-color-content-on-primary-enabled: rgb(255, 255, 255);
+    --cel-color-content-on-primary-hover: rgb(255, 255, 255);
+    --cel-color-content-on-primary-active: rgb(255, 255, 255);
+    --cel-color-content-on-secondary-enabled: rgb(255, 255, 255);
+    --cel-color-content-on-secondary-hover: rgb(255, 255, 255);
+    --cel-color-content-on-secondary-active: rgb(255, 255, 255);
+    --cel-color-content-on-positive-enabled: rgb(255, 255, 255);
+    --cel-color-content-on-negative-enabled: rgb(255, 255, 255);
+    --cel-color-content-on-inverse-enabled: rgb(0, 0, 0);
+    --cel-color-content-on-inverse-hover: rgb(0, 0, 0);
+    --cel-color-content-on-inverse-active: rgb(0, 0, 0);
+
+    /* Interactive (Used for the outermost part of the focus ring) */
+    --cel-color-interactive-focus-outer: rgb(8, 92, 229);
+    --cel-color-interactive-focus-inner: rgb(255, 255, 255);
+    --cel-color-interactive-highlight: rgb(197, 235, 247);
+    --cel-color-interactive-visited: rgb(153, 28, 231);
+
+
+    /* Cel Popup WIdth */
+    --cel-popup-width-small: 50%;
+    --cel-popup-width-medium: 60%;
+    --cel-popup-width-large: 80%;
+    --cel-popup-width-x-large: 90%;
+
+
+    /* CSS Custom Properties  */
+    /* Buttons */
+    --cel-button-color-background-primary-enabled: var(--cel-color-content-brand-enabled);
+    --cel-button-color-background-primary-focus: var(--cel-color-content-brand-hover);
+    --cel-button-color-background-primary-hover: var(--cel-color-content-brand-hover);
+    --cel-button-color-background-primary-active: var(--cel-color-content-brand-active);
+    --cel-button-color-background-primary-disabled: var(--cel-color-content-brand-enabled);
+    --cel-button-color-border-primary-disabled: var(--cel-color-content-brand-enabled);
+    --cel-button-color-background-primary-pending: var(--cel-color-content-brand-enabled);
+    --cel-button-label-color-text-primary-enabled: var(--cel-color-content-on-brand-enabled);
+    --cel-button-label-color-text-primary-focus: var(--cel-color-content-on-brand-hover);
+
+    /* Cards */
+    --cel-card-color-background: var(--cel-color-container-primary-enabled);
+    --cel-card-border-radius: var(--cel-border-radius-400);
+    --cel-card-shadow: var(--cel-shadow-100);
+    --cel-card-media-aspect-ratio: auto;
+    --cel-card-header-color-text: var(--cel-color-content-primary-enabled);
+    --cel-card-header-space-padding-top: var(--cel-space-400);
+    --cel-card-header-space-padding-right: var(--cel-space-600);
+    --cel-card-header-space-padding-bottom: var(--cel-space-400);
+    --cel-card-header-space-padding-left: var(--cel-space-600);
+    --cel-card-body-color-text: var(--cel-color-content-primary-enabled);
+    --cel-card-body-space-padding-top: var(--cel-space-400);
+    --cel-card-body-space-padding-right: var(--cel-space-600);
+    --cel-card-body-space-padding-bottom: var(--cel-space-400);
+    --cel-card-body-space-padding-left: var(--cel-space-600);
+    --cel-card-footer-color-text: var(--cel-color-content-secondary-enabled);
+    --cel-card-footer-space-padding-top: var(--cel-space-400);
+    --cel-card-footer-space-padding-right: var(--cel-space-600);
+    --cel-card-footer-space-padding-bottom: var(--cel-space-400);
+    --cel-card-footer-space-padding-left: var(--cel-space-600);
+    --cel-card-header-title-color-text: var(--cel-color-content-primary-enabled);
+    --cel-card-header-subtitle-color-text: var(--cel-color-content-secondary-enabled);
+
+    /* Divider */
+
+
+    /* CEL Component Color Custom Variables */
+    --cela-text-white: #ffffff;
+    --cela-text-dark: #455564;
+    --cela-text-light: #8c989f;
+    --cela-text-theme: var(--cela-color-primary);
+    --cela-color-warning: #fca902;
+    --cela-color-danger: #f44336;
+    --cela-color-light: #8c989f;
+    --cela-color-success: #4caf50;
+
+
+    /* Input field */
+        --color__accent: #6200ee;
+    
+        --field__background: #f5f5f5;
+        --field__background--hover: #e9e9e9;
+        --input__border: rgba(0, 0, 0, 0.22);
+        --input__border--hover: rgba(0, 0, 0, 0.62);
+        --label__color: #222;
+
+}
+
