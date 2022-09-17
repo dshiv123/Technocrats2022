@@ -238,6 +238,9 @@ const Layout = () => {
                 <Link to="/managequestion" className="nav-link">
                   Manage Question
                 </Link>
+                <Link to="/startquiz" className="nav-link">
+                  Start Quiz
+                </Link>
                 <Link to="/updateprofile" className="nav-link">
                   Update Profile
                 </Link>
@@ -256,7 +259,7 @@ const Layout = () => {
           <Outlet />
         </Col>
       </Container>
-      <div className="footer">Copyright</div>
+      <div className="footer">© 2022 Celsior Technologies™</div>
     </>
   );
 };
