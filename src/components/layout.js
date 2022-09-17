@@ -241,6 +241,12 @@ const Layout = () => {
                 <Link to="/startquiz" className="nav-link">
                   Start Quiz
                 </Link>
+                <Link to="/joinquiz" className="nav-link">
+                  Join Quiz
+                </Link>
+                <Link to="/questionpreview" className="nav-link">
+                  Question Preview
+                </Link>
                 <Link to="/updateprofile" className="nav-link">
                   Update Profile
                 </Link>

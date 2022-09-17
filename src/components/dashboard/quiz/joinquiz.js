@@ -24,7 +24,7 @@ import TextField from "@mui/material/TextField";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 
-const StartQuiz = () => {
+const JoinQuiz = () => {
   //
 
   //
@@ -33,40 +33,37 @@ const StartQuiz = () => {
     <>
       <div className="container">
         <div className="cel-card">
-          <div className="cel-card-header">Start Quiz</div>
+          <div className="cel-card-header">Join Quiz</div>
           <div className="cel-card-body">
-            <h2>Your Quiz name is... </h2>
+            {/* <h2>Your Quiz name is... </h2> */}
             <div className="row">
-              <div class="col-md-6 offset-md-3">
-                <Box component="form" noValidate autoComplete="off">
-                  <TextField
-                    className="frm-control"
-                    id="outlined-basic"
-                    label="Enter your Quiz Code"
-                    variant="outlined"
-                  />
-                </Box>
+              <div className="col-sm-12 col-md-6 col-lg-6 mx-auto">
+                <div className="code-section">
+                  <Box component="form" noValidate autoComplete="off">
+                    <TextField
+                      className="frm-control c-height"
+                      id="outlined-basic"
+                      label="Enter your Quiz Code"
+                      variant="outlined"
+                    />
+                  </Box>
+                </div>
               </div>
-              <div class="col-md-6 offset-md-3">
-                <Box component="form" noValidate autoComplete="off">
-                  <TextField
-                    className="frm-control"
-                    id="outlined-basic"
-                    label="Enter your Quiz Name"
-                    variant="outlined"
-                  />
-                </Box>
+              <div className="col-sm-12 col-md-6 col-lg-6 mx-auto">
+                <div className="join-code">
+                  Join Code
+                  <div className="join-big-font">67598130</div>
+                </div>
               </div>
-
+            </div>
+            <div class="row">
               {/* Next */}
               <div className="col-md-6 offset-md-3">
                 <div className="mx-auto cel-pt-20">
                   <Stack spacing={2} direction="row" fullWidth>
-                    <Link to="/managequestion" fullWidth className="nav-link">
-                      <Button variant="contained" fullWidth>
-                        Start
-                      </Button>
-                    </Link>
+                    <Button variant="contained" className="btn-width" fullWidth>
+                      Start Game
+                    </Button>
                   </Stack>
                 </div>
               </div>
@@ -79,4 +76,4 @@ const StartQuiz = () => {
   );
 };
 
-export default StartQuiz;
+export default JoinQuiz;
