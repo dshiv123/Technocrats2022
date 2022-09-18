@@ -7,6 +7,7 @@ import { test } from './test.reducer';
 import { adminQuiz } from './admin.quiz.reducer';
 import { userQuiz } from './user.quiz.reducer';
 import { quizCategory } from './quiz.category.reducer';
+import { quizQuestion } from './quiz.question.reducer';
 export default combineReducers({  
     alert,  
     authentication,
@@ -15,5 +16,6 @@ export default combineReducers({
     test,
     adminQuiz,
     userQuiz,
-    quizCategory
+    quizCategory,
+    quizQuestion
   })  

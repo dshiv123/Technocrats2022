@@ -1,8 +1,7 @@
-import config from '../../config';
 import { authHeader } from '../../_helpers/auth-header';
 import handleResponse from '../../_helpers/handle.response';
 import { UrlConstants } from '../../constants/url.constants';
-
+import Api from '../../_helpers/api';
 export const userQuizService = {
     getQuiz,
 
@@ -12,11 +11,12 @@ function getQuiz(code) {
     const requestOptions = {
         method: 'POST',
         headers: authHeader(),
-        body: JSON.stringify({ code }),
+        body: code ,
     };
-
-    return fetch(`${config.apiUrl}${UrlConstants.USER.GET_QUIZ}`, requestOptions)
-        .then(handleResponse)
+    debugger;
+    Api.post(`${UrlConstants.USER.GET_QUIZ}`, 
+        code
+    ).then(handleResponse)
         .then(response => {
             return response;
         });

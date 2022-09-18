@@ -312,7 +312,7 @@ const Layout = () => {
       {localStorage.getItem("user") && userinfo && (
         <Navbar
           className="cel-head"
-          bg={userinfo.role === RoleConstants.ADMIN ? "light" : "primary"}
+          bg={userinfo.role === RoleConstants.ADMIN ? "light" : "light"}
           variant="light"
           expand="lg"
         >
@@ -324,21 +324,28 @@ const Layout = () => {
                 <Link to="/dashboard" className="nav-link">
                   Dashboard
                 </Link>
-                <Link to="/createquiz" className="nav-link">
-                  Admin Quiz
+                {userinfo.role === RoleConstants.ADMIN &&<Link to="/createquiz" className="nav-link">
+                  Create Quiz
                 </Link>
+      }
+                {userinfo.role === RoleConstants.ADMIN &&
                 <Link to="/managequestion" className="nav-link">
                   Manage Question
                 </Link>
-                <Link to="/startquiz" className="nav-link">
+}
+{userinfo.role === RoleConstants.ADMIN &&<Link to="/startquiz" className="nav-link">
                   Start Quiz
                 </Link>
+}
+                {userinfo.role === RoleConstants.USER &&
                 <Link to="/joinquiz" className="nav-link">
                   Join Quiz
                 </Link>
-                <Link to="/questionpreview" className="nav-link">
-                  Question Preview
-                </Link>
+}
+               
+{userinfo.role === RoleConstants.ADMIN && <Link to="/questionpreview" className="nav-link">
+                  Quiz Preview
+                </Link>}
                 <Link to="/updateprofile" className="nav-link">
                   Update Profile
                 </Link>
