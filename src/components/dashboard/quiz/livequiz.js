@@ -25,6 +25,8 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
+import ControlPointIcon from "@mui/icons-material/ControlPoint";
+import AvTimerIcon from "@mui/icons-material/AvTimer";
 
 const LiveQuiz = () => {
   //
@@ -76,17 +78,17 @@ const LiveQuiz = () => {
                             variant="outlined"
                             color="info"
                             size="small"
-                            startIcon={<VisibilityOffIcon />}
+                            startIcon={<ControlPointIcon />}
                           >
-                            30 Sec
+                            5 Points
                           </Button>
                           <Button
                             variant="outlined"
                             size="small"
                             color="info"
-                            startIcon={<PreviewIcon />}
+                            startIcon={<AvTimerIcon />}
                           >
-                            5 Points
+                            30 Sec
                           </Button>
                         </Stack>
                       </div>
@@ -155,17 +157,17 @@ const LiveQuiz = () => {
                             variant="outlined"
                             color="info"
                             size="small"
-                            startIcon={<VisibilityOffIcon />}
+                            startIcon={<ControlPointIcon />}
                           >
-                            30 Sec
+                            5 Points
                           </Button>
                           <Button
                             variant="outlined"
                             size="small"
                             color="info"
-                            startIcon={<PreviewIcon />}
+                            startIcon={<AvTimerIcon />}
                           >
-                            5 Points
+                            30 Sec
                           </Button>
                         </Stack>
                       </div>
