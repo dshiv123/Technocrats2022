@@ -8,7 +8,7 @@ function getQuizquestion() {
     
     return dispatch => {
         dispatch(request({  }));
-
+debugger;
         quizQuestionService.getQuestion()
             .then(
                 question => { 

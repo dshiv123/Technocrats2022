@@ -1,19 +1,18 @@
 
 function handleResponse(response) {
-    return response.text().then(text => {
-        const data = text && JSON.parse(text);
-        if (!response.ok) {
-            if (response.status === 401) {
+    debugger;
+  
+        if (response.data.statusCode!=='200') {
+            if (response.data.status === 401) {
                 // auto logout if 401 response returned from api
                // logout();
               // window.location.reload(true);
             }
 
-            const error = (data && data.message) || response.statusText;
+            const error = (response.data && response.data.statusMessage) || response.data.status;
             return Promise.reject(error);
         }
 
-        return data;
-    });
+        return response.data;
 }
 export default handleResponse;

@@ -5,7 +5,6 @@ import { UrlConstants } from '../../../constants/url.constants';
 
 export const quizQuestionService = {
     getQuestion,
-
 };
 
 function getQuestion(code) {

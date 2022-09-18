@@ -1,7 +1,10 @@
+import { LocalConvenienceStoreOutlined } from '@mui/icons-material';
 import { QuestionAdminConstants } from '../../constants/quiz.question.constants';
 const initialState =  {
 };
 export function quizQuestion(state = initialState, action) {
+  debugger;
+  console.log(action);
   switch (action.type) {
     case QuestionAdminConstants.GETALL_QUESTION_REQUEST:
       return {
@@ -9,11 +12,11 @@ export function quizQuestion(state = initialState, action) {
       };
     case QuestionAdminConstants.GETALL_QUESTION_SUCCESS:
       return {
-        items: action.data
+        items: action.question.data
       };
     case QuestionAdminConstants.GETALL_QUESTION_FAILURE:
       return { 
-        error: action.error
+        error: action.question.error
       };
     // case userConstants.DELETE_REQUEST:
     //   // add 'deleting:true' property to user being deleted
