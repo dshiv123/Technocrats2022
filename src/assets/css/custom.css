@@ -19,6 +19,7 @@ body {
 
 
 /* Padding & Margin 4px */
+
 .cel-pl-4 {
     padding-left: var(--cel-space-100);
 }
@@ -847,12 +848,22 @@ font-size: 36px;
 }
 .ulList{
     display: inline; vertical-align: top;
+    
 }
 .ulList li{
     display: inline-block; 
     padding: var(--cel-space-400) var(--cel-space-400);
 }
-
+.ul-list{
+    position: relative;
+        margin-left: 0;
+        padding-left: 1.2em;
+}
+.ul-list li{
+    content: "+";
+        position: absolute;
+        left: 15px;
+}
 
 .logo img{
     width:150px;
@@ -968,7 +979,34 @@ a:link {
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
 }
+.h-heading{
+    background-color: var(--cel-seaFoam);
+    padding: var(--cel-space-300);
+    margin-bottom: var(--cel-space-200);
+    padding-left: var(--cel-space-400);;
+}
 
+.q-container{
+        padding: var(--cel-space-100) var(--cel-space-400);
+}
+.ques-body{
+    border-radius: var(--cel-border-radius-100);
+    box-shadow: var(--cel-card-shadow);
+    padding: var(--cel-space-300);
+    min-height: 23vh;
+}
+.qn{
+    margin-top:-12px;
+}
+.cel-p-0 {
+    padding: var(--cel-space-0);
+}
+.cel-nagative-35{
+    margin-top: var(--cel-space-negative-35);
+}
+.cel-negative-24{
+    margin-top: var(--cel-space-negative-24);
+}
 
 .form-label {
     padding: var(--cel-space-200) 0px;
@@ -1013,6 +1051,13 @@ a:link {
     .login-container {
         width: var(--cel-popup-width-x-large);
     }
+    .cel-negative-24, .cel-nagative-35{
+        margin-top: 0px;
+     }
+     .ques-body{
+        min-height: 35vh;
+        margin-bottom: 20px;
+         }
 
     .logo img {
         width: 100px;

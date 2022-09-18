@@ -15,9 +15,6 @@ import { AgGridReact } from "ag-grid-react"; // the AG Grid React Component
 import "ag-grid-community/styles/ag-grid.css"; // Core grid CSS, always needed
 import "ag-grid-community/styles/ag-theme-alpine.css"; // Optional theme CSS
 import { userActions } from "../../../redux/_actions/user.actions";
-// import { CelsiorGrid } from 'celsior-grid';
-// import 'celsior-grid/styles/celsior-grid.css';
-// import 'celsior-grid/styles/celsior-theme-default.css';
 
 // **************************
 // import * as React from "react";

@@ -339,6 +339,9 @@ const Layout = () => {
                 <Link to="/questionpreview" className="nav-link">
                   Question Preview
                 </Link>
+                <Link to="/livequiz" className="nav-link">
+                  Live Quiz
+                </Link>
                 <Link to="/updateprofile" className="nav-link">
                   Update Profile
                 </Link>
