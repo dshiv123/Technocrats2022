@@ -324,7 +324,7 @@ const Layout = () => {
           variant="light"
           expand="lg"
         >
-          <Container>
+          <Container className="container1">
             <Navbar.Brand href="/dashboard">QuizCore</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
