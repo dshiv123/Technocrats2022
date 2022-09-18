@@ -112,13 +112,13 @@ function LoginPage() {
               Register
             </Link>{" "}
             |{" "}
-            <Button
+            {/* <Button
               as={Col}
               variant="primary"
               onClick={() => setShowModal(true)}
             >
               Info
-            </Button>
+            </Button> */}
           </div>
         </form>
 

@@ -6,7 +6,7 @@ export const adminQuizActions = {
     mapQuiz
 };
 function createQuiz(quiz) {
-    debugger;
+    
     return dispatch => {
         dispatch(request({ quiz }));
 
@@ -27,7 +27,7 @@ function createQuiz(quiz) {
     function failure(error) { return { type: QuizAdminConstants.CREATE_QUIZ_FAILURE, error } }
 }
 function mapQuiz(mapping) {
-    debugger;
+    
     return dispatch => {
         dispatch(request({ mapping }));
 

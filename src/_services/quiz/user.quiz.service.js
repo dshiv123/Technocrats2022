@@ -13,7 +13,7 @@ function getQuiz(code) {
         headers: authHeader(),
         body: code ,
     };
-    debugger;
+    
     Api.post(`${UrlConstants.USER.GET_QUIZ}`, 
         code
     ).then(handleResponse)

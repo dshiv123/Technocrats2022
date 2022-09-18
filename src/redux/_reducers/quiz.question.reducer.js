@@ -3,7 +3,7 @@ import { QuestionAdminConstants } from '../../constants/quiz.question.constants'
 const initialState =  {
 };
 export function quizQuestion(state = initialState, action) {
-  debugger;
+  
   console.log(action);
   switch (action.type) {
     case QuestionAdminConstants.GETALL_QUESTION_REQUEST:

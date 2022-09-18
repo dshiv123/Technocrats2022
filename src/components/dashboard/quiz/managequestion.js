@@ -14,6 +14,7 @@ import { AgGridReact } from "ag-grid-react"; // the AG Grid React Component
 import "ag-grid-community/styles/ag-grid.css"; // Core grid CSS, always needed
 import "ag-grid-community/styles/ag-theme-alpine.css"; // Optional theme CSS
 import { adminQuizquestionActions } from "../../../redux/_actions/quiz.qustion.actions";
+import { adminQuizActions } from "../../../redux/_actions/admin.quiz.actions"
 // import { CelsiorGrid } from 'celsior-grid';
 // import 'celsior-grid/styles/celsior-grid.css';
 // import 'celsior-grid/styles/celsior-theme-default.css';
@@ -104,6 +105,8 @@ useEffect(() => {
  /// alert(quizCategory.toString());
 },[]);
 const quizQuestion = useSelector(state => state.quizQuestion);
+const adminQuiz = useSelector(state => state.adminQuiz);
+
   const handleChange = (event) => {
     setQuestionType(event.target.value);
   };
@@ -122,13 +125,81 @@ const quizQuestion = useSelector(state => state.quizQuestion);
     setAnchorEl(null);
   };
   //
+const handleChangeEdit=(event)=>{
+  alert(event.target.value);
+}
+  const submitMapQuiz=()=>{
+    let mappedquestion=[];
+    quizQuestion.map(question=>{
+      mappedquestion.push(question.questiontypeid);
+    })
+    let mapping={
+
+      quizid: 2,
+      mappedquestion:mappedquestion
+  };
+    dispatch(adminQuizActions.mapQuiz(mapping));
+  }
+  let question={
+
+    "questiontext": "Capital of Nepal",
+
+    "subjectid": 2,
+
+    "questionTypeid": 1,
+
+    "description":"Sample",
+
+    "questionmarks":10,
+
+    "questiontime":20,
+
+    "isactive":true,
+
+    "isMandatory":false,
+
+    "Answer": [
+
+        {
+
+            
+
+            "answer": "London",
+
+            "iscorrect": false
+
+        },
+
+        {
+
+            
+
+            "answer": "Moscow",
+
+            "iscorrect": true
+
+        },
+
+        {
+
+            
+
+            "answer": "Bhopal",
+
+            "iscorrect": true
+
+        }
+
+    ]
+
+};
 
   return (
     <>
       <div className="container">
         <div className="cel-card">
           <div className="cel-card-header">
-            {JSON.stringify(quizQuestion)}
+            
             Manage Question
             <div className="div-right">
               <Button
@@ -168,12 +239,151 @@ const quizQuestion = useSelector(state => state.quizQuestion);
               </StyledMenu>
             </div>
           </div>
-          <div className="cel-card-body">
+          
+{/* question add */}
+<div className="cel-card-body" >
             <div className="row">
               <div className="col-sm-12 col-md-6 col-lg-6">
                 <label className="cel-pl-8">Add Question</label>
                 <div contentEditable="true" className="content-editable">
-                  Put question here
+                  Put question here 
+                </div>
+              </div>
+              <div className="col-sm-12 col-md-6 col-lg-6">
+                <Box className="cel-pt-28">
+                  <FormControl fullWidth>
+                    <InputLabel id="demo-simple-select-label">
+                      Question Type
+                    </InputLabel>
+                    <Select
+                      labelId="demo-simple-select-label"
+                      id="demo-simple-select"
+                      value={QuestionType}
+                      label="Question Type"
+                      onChange={handleChange}
+                    >
+                      <MenuItem value={1}>Multiple Choice</MenuItem>
+                      <MenuItem value={2}>Single Option</MenuItem>
+                    </Select>
+                  </FormControl>
+                </Box>
+              </div>
+              {/* Next */}
+              <div className="col-sm-12 col-md-6 col-lg-6">
+                <Box className="cel-pt-28">
+                  <FormControl fullWidth>
+                    <InputLabel id="demo-simple-select-label">
+                      Question Point
+                    </InputLabel>
+                    <Select
+                      labelId="demo-simple-select-label"
+                      id="demo-simple-select"
+                      value={QuestionPoint}
+                      label="Question Point"
+                      onChange={handleChangeQuesType}
+                    >
+                      <MenuItem value={0}>Select</MenuItem>
+                      <MenuItem value={1}>1 Point</MenuItem>
+                      <MenuItem value={2}>2 Points</MenuItem>
+                      <MenuItem value={3}>3 Points</MenuItem>
+                      <MenuItem value={4}>4 Points</MenuItem>
+                      <MenuItem value={5}>5 Points</MenuItem>
+                      <MenuItem value={6}>6 Points</MenuItem>
+                      <MenuItem value={7}>7 Points</MenuItem>
+                      <MenuItem value={8}>8 Points</MenuItem>
+                    </Select>
+                  </FormControl>
+                </Box>
+              </div>
+              <div className="col-sm-12 col-md-6 col-lg-6">
+                <Box className="cel-pt-28">
+                  <FormControl fullWidth>
+                    <InputLabel id="demo-simple-select-label">Timer</InputLabel>
+                    <Select
+                      labelId="demo-simple-select-label"
+                      id="demo-simple-select"
+                      value={Timer}
+                      label="Timer"
+                      onChange={handleChangeTimer}
+                    >
+                      <MenuItem value={1}>30 Sec</MenuItem>
+                      <MenuItem value={2}>1 Min</MenuItem>
+                      <MenuItem value={3}>2 Mins</MenuItem>
+                      <MenuItem value={4}>3 Mins</MenuItem>
+                    </Select>
+                  </FormControl>
+                </Box>
+              </div>
+              </div>
+              {/*  */}
+              {QuestionType ==1 &&
+              <div className="row">
+              <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 cel-pt-20">
+                <div
+                   onChange={handleChangeEdit}
+                  className="content-editable action-link"
+                >
+                  <div className="action-button">
+                    <div className="delete-icon">
+                      <DeleteIcon />
+                    </div>
+                    <FormGroup>
+                      <FormControlLabel
+                        label="Right Answer"
+                        control={<Checkbox />}
+                      />
+                    </FormGroup>
+                  </div>
+                  Type an answer option here  sadafsafsaf
+                </div>
+              </div>
+             
+              </div>
+              }
+              {/*  */}
+              {QuestionType !=1 &&
+              <div className="row">
+                {question}
+             {question.Answer.map(answer=>{
+              <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 cel-pt-20">
+                <div
+                  
+                  className="content-editable action-link"
+                >
+                  <div className="action-button">
+                    <div className="delete-icon">
+                      <DeleteIcon />
+                    </div>
+                    <FormControlLabel
+                      value="Correct"
+                      control={<Radio />}
+                      label="Correct"
+                      name="radio1"
+                    />
+                  </div>
+                  Type an answer option here
+                </div>
+              </div>
+              })
+              }
+              </div>
+}
+          
+          </div>
+          <div></div>
+          <button >
+            submit
+          </button>
+{/* questoin add ends */}
+{quizQuestion.loading && <span>loading</span>}
+          {quizQuestion.loading!=true && quizQuestion.items  && quizQuestion.items.map(
+            obj=> <div className="cel-card-body">
+            <div className="row">
+              <div className="col-sm-12 col-md-6 col-lg-6">
+                <label className="cel-pl-8">Add Question</label>
+                {JSON.stringify(obj)}
+                <div contentEditable="true" className="content-editable">
+                  Put question here 
                 </div>
               </div>
               <div className="col-sm-12 col-md-6 col-lg-6">
@@ -245,7 +455,7 @@ const quizQuestion = useSelector(state => state.quizQuestion);
 
               <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 cel-pt-20">
                 <div
-                  contentEditable="true"
+                   onChange={handleChangeEdit}
                   className="content-editable action-link"
                 >
                   <div className="action-button">
@@ -259,7 +469,7 @@ const quizQuestion = useSelector(state => state.quizQuestion);
                       />
                     </FormGroup>
                   </div>
-                  Type an answer option here
+                  Type an answer option here  sadafsafsaf
                 </div>
               </div>
               <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 cel-pt-20">
@@ -414,18 +624,22 @@ const quizQuestion = useSelector(state => state.quizQuestion);
                 </div>
               </div>
             </div>
+          
+          </div>
+          )
+          }
             <div className="col-sm-12 col-md-12 col-lg-12">
               <div className="circle-dev">
                 <AddIcon large />
               </div>
               <div className="mx-auto cel-pt-20">
                 <Stack spacing={2} direction="row">
+                  {adminQuiz.loading && <span>loading</span>}
                   <Button variant="outlined">Cancel</Button>
-                  <Button variant="contained">Submit</Button>
+                  <Button variant="contained" onClick={submitMapQuiz}>Submit</Button>
                 </Stack>
               </div>
             </div>
-          </div>
         </div>
         <div></div>
       </div>

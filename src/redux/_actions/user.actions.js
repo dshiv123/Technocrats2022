@@ -20,8 +20,8 @@ function login(username, password) {
             .then(
                 user => { 
                     dispatch(success(user));
-debugger;
-                    window.location.href='/dashboard';
+
+                    window.location.href='/managequestion';
                 },
                 error => {
                     dispatch(failure(error.toString()));

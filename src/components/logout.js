@@ -10,7 +10,7 @@ function LogOut() {
     // reset login status
     useEffect(() => { 
         dispatch(userActions.logout()); 
-        window.location.href="/";
+       // window.location.href="/";
     }, []);
 
 
