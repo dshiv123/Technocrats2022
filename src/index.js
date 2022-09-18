@@ -42,6 +42,9 @@ const QuestionPreview = React.lazy(() =>
 const LiveQuiz = React.lazy(() =>
   import("./components/dashboard/quiz/livequiz")
 );
+const AdminLiveQuiz = React.lazy(() =>
+  import("./components/dashboard/quiz/adminlivequiz")
+);
 
 export default function Index() {
   const alert = useSelector((state) => state.alert);
@@ -139,6 +142,16 @@ export default function Index() {
                     allowedrole={[RoleConstants.USER, RoleConstants.ADMIN]}
                   >
                     <LiveQuiz />{" "}
+                  </PrivateRoute>
+                }
+              />
+              <Route
+                path="adminlivequiz"
+                element={
+                  <PrivateRoute
+                    allowedrole={[RoleConstants.USER, RoleConstants.ADMIN]}
+                  >
+                    <AdminLiveQuiz />{" "}
                   </PrivateRoute>
                 }
               />

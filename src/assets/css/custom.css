@@ -834,8 +834,12 @@ color: var(--cel-c-blue);}
     
     text-align: right;
 }
+.white{
+color: var(--cel-white-color);
+}
 .right-icon svg{
 font-size: 36px;
+
 }
 
 .header {
@@ -900,7 +904,7 @@ font-size: 36px;
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     left: 0;
@@ -909,6 +913,10 @@ font-size: 36px;
     text-align: center;
     font: var(--cel-font-helper-regular);
 
+}
+.center-align svg{
+    font-size: 100px;
+    padding-top: var(--cel-space-600);
 }
 
 .footer-policy {
@@ -997,6 +1005,15 @@ a:link {
 }
 .qn{
     margin-top:-12px;
+}
+.user-profile{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: var(--cel-e-color-orange);
+}
+.mt--120{
+        margin-top: -120px;
 }
 .cel-p-0 {
     padding: var(--cel-space-0);

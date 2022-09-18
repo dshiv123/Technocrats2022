@@ -63,7 +63,15 @@ const Layout = () => {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
+        {[
+          "Dashboard",
+          "Admin Quiz",
+          "Manage Question",
+          "Start Quiz",
+          "Join Quiz",
+          "Question Preview",
+          "Live Quiz",
+        ].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
@@ -341,6 +349,9 @@ const Layout = () => {
                 </Link>
                 <Link to="/livequiz" className="nav-link">
                   Live Quiz
+                </Link>
+                <Link to="/adminlivequiz" className="nav-link">
+                  Admin Live Quiz
                 </Link>
                 <Link to="/updateprofile" className="nav-link">
                   Update Profile
