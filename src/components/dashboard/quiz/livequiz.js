@@ -78,7 +78,7 @@ const LiveQuiz = () => {
                             size="small"
                             startIcon={<VisibilityOffIcon />}
                           >
-                            Hide Answer
+                            30 Sec
                           </Button>
                           <Button
                             variant="outlined"
@@ -86,7 +86,7 @@ const LiveQuiz = () => {
                             color="info"
                             startIcon={<PreviewIcon />}
                           >
-                            Preview
+                            5 Points
                           </Button>
                         </Stack>
                       </div>
@@ -148,7 +148,7 @@ const LiveQuiz = () => {
                 <div className="col-sm-12 col-md-6 col-lg-6">
                   <div className="ques-body">
                     <div class="q-heading">
-                      <div className="qn">2. Multiple Choice</div>
+                      <div className="qn">2. Single Choice</div>
                       <div class="d-flex flex-row-reverse cel-negative-24">
                         <Stack direction="row" spacing={2}>
                           <Button
@@ -157,7 +157,7 @@ const LiveQuiz = () => {
                             size="small"
                             startIcon={<VisibilityOffIcon />}
                           >
-                            Hide Answer
+                            30 Sec
                           </Button>
                           <Button
                             variant="outlined"
@@ -165,7 +165,7 @@ const LiveQuiz = () => {
                             color="info"
                             startIcon={<PreviewIcon />}
                           >
-                            Preview
+                            5 Points
                           </Button>
                         </Stack>
                       </div>
